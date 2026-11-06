@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Обзор учебной аналитики</title>
+  <desc id="desc">Экран веб-сервиса с графиком активности, статусами заданий и таблицей курсов</desc>
+  <style>
+    text{font-family:'Segoe UI',sans-serif;fill:#243138}
+    .muted{fill:#718087}.small{font-size:12px}.label{font-size:13px}.body{font-size:15px}.head{font-size:19px;font-weight:700}.strong{font-weight:700}.number{font-size:29px;font-weight:700}.nav{font-size:14px}
+  </style>
+  <rect width="1200" height="760" fill="#f4f7f8"/>
+  <rect width="194" height="760" fill="#e9f0f1"/>
+  <rect x="24" y="28" width="28" height="28" rx="7" fill="#286f7d"/>
+  <path d="M31 47l6-8 5 4 4-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="40" class="body strong">Учебная</text>
+  <text x="62" y="56" class="body strong">аналитика</text>
+  <rect x="14" y="102" width="166" height="38" rx="8" fill="#d3e6e8"/>
+  <text x="30" y="126" class="nav strong" fill="#215f6b">Обзор</text>
+  <text x="30" y="169" class="nav muted">Курсы</text>
+  <text x="30" y="208" class="nav muted">Участники</text>
+  <text x="30" y="247" class="nav muted">Отчёты</text>
+  <text x="30" y="286" class="nav muted">Подключения</text>
+  <line x1="24" y1="686" x2="170" y2="686" stroke="#cedcde"/>
+  <circle cx="32" cy="714" r="5" fill="#5b9b80"/>
+  <text x="45" y="719" class="small muted">Moodle подключён</text>
+
+  <text x="222" y="58" font-size="27" font-weight="700">Обзор обучения</text>
+  <text x="222" y="83" class="label muted">Курсы, задания и активность в одном месте</text>
+
+  <rect x="222" y="112" width="301" height="104" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="242" y="143" class="label muted">Активные курсы</text>
+  <text x="242" y="186" class="number">24</text>
+  <text x="291" y="184" class="small muted">за текущий семестр</text>
+  <rect x="535" y="112" width="301" height="104" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="555" y="143" class="label muted">Участники</text>
+  <text x="555" y="186" class="number">1 248</text>
+  <text x="661" y="184" class="small muted">в выбранных курсах</text>
+  <rect x="848" y="112" width="326" height="104" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="868" y="143" class="label muted">Задания сданы вовремя</text>
+  <text x="868" y="186" class="number">78%</text>
+  <text x="942" y="184" class="small muted">от всех отправленных работ</text>
+
+  <rect x="222" y="234" width="624" height="286" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="244" y="268" class="head">Активность по неделям</text>
+  <text x="244" y="289" class="small muted">Просмотры материалов и сдача заданий</text>
+  <line x1="278" y1="328" x2="815" y2="328" stroke="#edf1f2"/>
+  <line x1="278" y1="371" x2="815" y2="371" stroke="#edf1f2"/>
+  <line x1="278" y1="414" x2="815" y2="414" stroke="#edf1f2"/>
+  <line x1="278" y1="457" x2="815" y2="457" stroke="#dfe7e9"/>
+  <text x="245" y="333" class="small muted">900</text><text x="245" y="376" class="small muted">600</text><text x="245" y="419" class="small muted">300</text><text x="254" y="462" class="small muted">0</text>
+  <path d="M285 422 C335 405 349 385 394 390 S468 355 503 360 S577 329 612 337 S683 345 721 310 S776 294 806 308 L806 456 L285 456Z" fill="#dceef0"/>
+  <path d="M285 422 C335 405 349 385 394 390 S468 355 503 360 S577 329 612 337 S683 345 721 310 S776 294 806 308" fill="none" stroke="#2e8190" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="285" cy="422" r="4" fill="#2e8190"/><circle cx="394" cy="390" r="4" fill="#2e8190"/><circle cx="503" cy="360" r="4" fill="#2e8190"/><circle cx="612" cy="337" r="4" fill="#2e8190"/><circle cx="721" cy="310" r="4" fill="#2e8190"/><circle cx="806" cy="308" r="4" fill="#2e8190"/>
+  <text x="278" y="486" class="small muted">Сен 1</text><text x="374" y="486" class="small muted">Сен 2</text><text x="482" y="486" class="small muted">Сен 3</text><text x="590" y="486" class="small muted">Сен 4</text><text x="698" y="486" class="small muted">Окт 1</text><text x="782" y="486" class="small muted">Окт 2</text>
+
+  <rect x="858" y="234" width="316" height="286" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="880" y="268" class="head">Статус заданий</text>
+  <text x="880" y="289" class="small muted">По всем активным курсам</text>
+  <circle cx="1016" cy="390" r="70" fill="none" stroke="#e8eef0" stroke-width="22"/>
+  <circle cx="1016" cy="390" r="70" fill="none" stroke="#2e8190" stroke-width="22" stroke-dasharray="294 440" transform="rotate(-90 1016 390)"/>
+  <circle cx="1016" cy="390" r="70" fill="none" stroke="#e8ae5a" stroke-width="22" stroke-dasharray="96 440" stroke-dashoffset="-294" transform="rotate(-90 1016 390)"/>
+  <text x="985" y="388" font-size="25" font-weight="700">1 834</text>
+  <text x="983" y="408" class="small muted">задания</text>
+  <circle cx="889" cy="483" r="5" fill="#2e8190"/><text x="901" y="488" class="small">Сданы 67%</text>
+  <circle cx="1015" cy="483" r="5" fill="#e8ae5a"/><text x="1027" y="488" class="small">В работе 22%</text>
+
+  <rect x="222" y="538" width="952" height="198" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="244" y="574" class="head">Курсы</text>
+  <text x="244" y="601" class="small muted">Название</text><text x="675" y="601" class="small muted">Участники</text><text x="823" y="601" class="small muted">Задания</text><text x="1010" y="601" class="small muted">Выполнено</text>
+  <line x1="244" y1="612" x2="1152" y2="612" stroke="#e5ebed"/>
+  <text x="244" y="639" class="label">Основы программирования</text><text x="682" y="639" class="label">184</text><text x="836" y="639" class="label">12</text><text x="1012" y="639" class="label strong">82%</text>
+  <line x1="244" y1="652" x2="1152" y2="652" stroke="#edf1f2"/>
+  <text x="244" y="679" class="label">Математический анализ</text><text x="682" y="679" class="label">126</text><text x="836" y="679" class="label">9</text><text x="1012" y="679" class="label strong">76%</text>
+  <line x1="244" y1="692" x2="1152" y2="692" stroke="#edf1f2"/>
+  <text x="244" y="719" class="label">Проектирование систем</text><text x="682" y="719" class="label">92</text><text x="836" y="719" class="label">8</text><text x="1012" y="719" class="label strong">71%</text>
+</svg>

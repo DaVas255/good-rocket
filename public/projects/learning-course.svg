@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Аналитика отдельного курса</title>
+  <desc id="desc">Экран веб-сервиса с результатами курса, графиком выполнения и таблицей заданий</desc>
+  <style>
+    text{font-family:'Segoe UI',sans-serif;fill:#243138}
+    .muted{fill:#718087}.small{font-size:12px}.label{font-size:13px}.body{font-size:15px}.head{font-size:19px;font-weight:700}.strong{font-weight:700}.number{font-size:29px;font-weight:700}.nav{font-size:14px}
+  </style>
+  <rect width="1200" height="760" fill="#f4f7f8"/>
+  <rect width="194" height="760" fill="#e9f0f1"/>
+  <rect x="24" y="28" width="28" height="28" rx="7" fill="#286f7d"/>
+  <path d="M31 47l6-8 5 4 4-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="40" class="body strong">Учебная</text>
+  <text x="62" y="56" class="body strong">аналитика</text>
+  <text x="30" y="126" class="nav muted">Обзор</text>
+  <rect x="14" y="145" width="166" height="38" rx="8" fill="#d3e6e8"/>
+  <text x="30" y="169" class="nav strong" fill="#215f6b">Курсы</text>
+  <text x="30" y="208" class="nav muted">Участники</text>
+  <text x="30" y="247" class="nav muted">Отчёты</text>
+  <text x="30" y="286" class="nav muted">Подключения</text>
+  <line x1="24" y1="686" x2="170" y2="686" stroke="#cedcde"/>
+  <circle cx="32" cy="714" r="5" fill="#5b9b80"/>
+  <text x="45" y="719" class="small muted">Moodle подключён</text>
+
+  <text x="222" y="58" font-size="27" font-weight="700">Основы программирования</text>
+  <text x="222" y="83" class="label muted">Сводка по заданиям и активности участников</text>
+
+  <rect x="222" y="130" width="301" height="103" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="242" y="161" class="label muted">Участники курса</text><text x="242" y="204" class="number">184</text>
+  <rect x="535" y="130" width="301" height="103" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="555" y="161" class="label muted">Сдано заданий</text><text x="555" y="204" class="number">82%</text>
+  <rect x="848" y="130" width="326" height="103" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="868" y="161" class="label muted">Средняя оценка</text><text x="868" y="204" class="number">4,2</text><text x="923" y="202" class="small muted">из 5</text>
+
+  <rect x="222" y="251" width="952" height="255" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="244" y="286" class="head">Выполнение заданий</text>
+  <text x="244" y="308" class="small muted">Доля студентов, сдавших работу к концу недели</text>
+  <line x1="284" y1="346" x2="1140" y2="346" stroke="#edf1f2"/>
+  <line x1="284" y1="386" x2="1140" y2="386" stroke="#edf1f2"/>
+  <line x1="284" y1="426" x2="1140" y2="426" stroke="#edf1f2"/>
+  <line x1="284" y1="466" x2="1140" y2="466" stroke="#dfe7e9"/>
+  <text x="246" y="350" class="small muted">100%</text><text x="253" y="390" class="small muted">75%</text><text x="253" y="430" class="small muted">50%</text><text x="253" y="470" class="small muted">25%</text>
+  <path d="M305 451 L446 433 L587 412 L728 389 L869 369 L1010 353 L1124 342" fill="none" stroke="#2e8190" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="305" cy="451" r="5" fill="#2e8190"/><circle cx="446" cy="433" r="5" fill="#2e8190"/><circle cx="587" cy="412" r="5" fill="#2e8190"/><circle cx="728" cy="389" r="5" fill="#2e8190"/><circle cx="869" cy="369" r="5" fill="#2e8190"/><circle cx="1010" cy="353" r="5" fill="#2e8190"/><circle cx="1124" cy="342" r="5" fill="#2e8190"/>
+  <text x="296" y="490" class="small muted">1 нед.</text><text x="437" y="490" class="small muted">2 нед.</text><text x="578" y="490" class="small muted">3 нед.</text><text x="719" y="490" class="small muted">4 нед.</text><text x="860" y="490" class="small muted">5 нед.</text><text x="1001" y="490" class="small muted">6 нед.</text><text x="1107" y="490" class="small muted">7 нед.</text>
+
+  <rect x="222" y="524" width="952" height="211" rx="12" fill="#fff" stroke="#dfe7e9"/>
+  <text x="244" y="560" class="head">Задания курса</text>
+  <text x="244" y="589" class="small muted">Задание</text><text x="738" y="589" class="small muted">Сдали</text><text x="914" y="589" class="small muted">Средняя оценка</text>
+  <line x1="244" y1="600" x2="1152" y2="600" stroke="#e5ebed"/>
+  <text x="244" y="628" class="label">Введение в алгоритмы</text><text x="742" y="628" class="label">171 из 184</text><text x="928" y="628" class="label strong">4,5</text>
+  <line x1="244" y1="641" x2="1152" y2="641" stroke="#edf1f2"/>
+  <text x="244" y="669" class="label">Условия и циклы</text><text x="742" y="669" class="label">158 из 184</text><text x="928" y="669" class="label strong">4,2</text>
+  <line x1="244" y1="682" x2="1152" y2="682" stroke="#edf1f2"/>
+  <text x="244" y="710" class="label">Функции и структуры данных</text><text x="742" y="710" class="label">146 из 184</text><text x="928" y="710" class="label strong">4,0</text>
+</svg>
