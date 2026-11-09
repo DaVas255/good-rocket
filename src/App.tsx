@@ -50,7 +50,7 @@ export function App() {
           video.muted = true;
           video.src = "/projects/smartberry-scroll.mp4";
           video.load();
-        }, 1800)
+        }, 600)
       : undefined;
 
     return () => {
