@@ -1,4 +1,4 @@
 export const contacts = {
-  telegram: "DaVas255",
+  telegram: "goodrocket",
   email: "goodrocket@yandex.ru",
 };
