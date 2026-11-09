@@ -16,21 +16,50 @@ export function ProjectDialog({
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const openerRef = useRef<HTMLElement | null>(null);
+  const scrollYRef = useRef<number | null>(null);
   const [serviceView, setServiceView] = useState<"overview" | "course">(
     "overview",
   );
   useEffect(() => {
     const element = ref.current;
-    const opener =
-      document.activeElement instanceof HTMLElement
-        ? document.activeElement
-        : null;
+    if (!openerRef.current && document.activeElement instanceof HTMLElement)
+      openerRef.current = document.activeElement;
+    if (scrollYRef.current === null) scrollYRef.current = window.scrollY;
+
+    const scrollY = scrollYRef.current;
+    const bodyStyle = document.body.style;
+    const previousBodyStyle = {
+      position: bodyStyle.position,
+      top: bodyStyle.top,
+      left: bodyStyle.left,
+      right: bodyStyle.right,
+      width: bodyStyle.width,
+    };
+
     element?.showModal();
+    element?.focus({ preventScroll: true });
     document.body.classList.add("dialog-open");
+    bodyStyle.position = "fixed";
+    bodyStyle.top = `-${scrollY}px`;
+    bodyStyle.left = "0";
+    bodyStyle.right = "0";
+    bodyStyle.width = "100%";
+
     return () => {
       element?.close();
       document.body.classList.remove("dialog-open");
-      opener?.focus();
+      bodyStyle.position = previousBodyStyle.position;
+      bodyStyle.top = previousBodyStyle.top;
+      bodyStyle.left = previousBodyStyle.left;
+      bodyStyle.right = previousBodyStyle.right;
+      bodyStyle.width = previousBodyStyle.width;
+      const rootStyle = document.documentElement.style;
+      const previousScrollBehavior = rootStyle.scrollBehavior;
+      rootStyle.scrollBehavior = "auto";
+      window.scrollTo({ top: scrollY, left: 0, behavior: "instant" });
+      rootStyle.scrollBehavior = previousScrollBehavior;
+      openerRef.current?.focus({ preventScroll: true });
     };
   }, []);
 
@@ -55,6 +84,7 @@ export function ProjectDialog({
           ? "project-dialog-featured project-dialog-service"
           : "project-dialog-featured"
       }
+      tabIndex={-1}
       aria-labelledby="dialog-title"
       onCancel={(event) => {
         event.preventDefault();

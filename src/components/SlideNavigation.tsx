@@ -73,9 +73,11 @@ export function SlideNavigation() {
       }
     };
     const onTouchStart = (event: TouchEvent) => {
+      if (document.body.classList.contains("dialog-open")) return;
       touchY = event.touches[0]?.clientY ?? 0;
     };
     const onTouchEnd = (event: TouchEvent) => {
+      if (document.body.classList.contains("dialog-open")) return;
       const delta = touchY - (event.changedTouches[0]?.clientY ?? touchY);
       if (
         Math.abs(delta) > 55 &&

@@ -49,6 +49,10 @@ body.dialog-open {
   overflow: hidden;
 }
 
+body.dialog-open .slide {
+  overflow: hidden;
+}
+
 body.loader-open {
   overflow: hidden;
 }
@@ -633,10 +637,15 @@ dialog {
   border: 1px solid var(--graphite);
   border-radius: 0;
   overflow: auto;
+  overscroll-behavior: contain;
 }
 
 dialog::backdrop {
   background: rgb(16 17 15 / 82%);
+}
+
+dialog:focus {
+  outline: none;
 }
 
 .dialog-header {
@@ -1376,16 +1385,19 @@ dialog::backdrop {
   }
 
   .featured-project-media video {
-    aspect-ratio: 1.35;
-    object-position: 57% top;
+    aspect-ratio: 2.1;
+    object-fit: contain;
+    object-position: center;
   }
 
   .featured-project-media-telegram {
-    height: 330px;
+    height: clamp(240px, 36vh, 300px);
+    padding-inline: 18px;
   }
 
   .featured-project-media-service {
-    height: min(38vh, 270px);
+    height: auto;
+    aspect-ratio: 237 / 150;
   }
 
   .service-view-switch {
@@ -1395,9 +1407,28 @@ dialog::backdrop {
   }
 
   .featured-project-phone {
-    height: 76%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1206 / 2449;
     border-width: 4px;
     border-radius: 17px;
+  }
+
+  .featured-project-phones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(calc(100% - 16px), 270px);
+    height: auto;
+    gap: 14px;
+  }
+
+  .featured-project-phone img {
+    object-fit: contain;
+  }
+
+  .featured-project-phone-bot,
+  .featured-project-phone-app {
+    transform: none;
   }
 }
 
