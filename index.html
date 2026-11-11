@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Good Rocket — разработка сайтов, сервисов и Telegram-ботов</title>
+    <title>Разработка сайтов в Томске — Good Rocket</title>
     <meta
       name="description"
-      content="Good Rocket — команда с опытом в Яндексе и стартапах. Создаём сайты, веб-сервисы и Telegram-ботов для бизнеса. От идеи к результату."
+      content="Разрабатываем сайты, веб-сервисы и Telegram-ботов для бизнеса в Томске и по всей России — от проектирования и дизайна до запуска."
     />
     <meta name="theme-color" content="#191a18" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <script>
       document.documentElement.classList.add("has-js");
     </script>
-    <meta property="og:title" content="Good Rocket — от идеи к результату" />
+    <meta
+      property="og:title"
+      content="Разработка сайтов в Томске — Good Rocket"
+    />
     <meta
       property="og:description"
-      content="От идеи к результату. Сайты, сервисы и Telegram-боты для бизнеса — от проектирования до запуска."
+      content="Сайты, веб-сервисы и Telegram-боты для бизнеса в Томске и по всей России — от проектирования и дизайна до запуска."
     />
     <meta property="og:image" content="https://goodrocket.ru/og.png" />
     <meta
@@ -49,10 +52,38 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Good Rocket",
-        "url": "https://goodrocket.ru/",
-        "description": "Дизайн и разработка сайтов, веб-сервисов и Telegram-ботов для бизнеса."
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://goodrocket.ru/#organization",
+            "name": "Good Rocket",
+            "url": "https://goodrocket.ru/",
+            "email": "goodrocket@yandex.ru",
+            "description": "Разработка сайтов, веб-сервисов и Telegram-ботов для бизнеса.",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Томск"
+              },
+              {
+                "@type": "Country",
+                "name": "Россия"
+              }
+            ],
+            "sameAs": ["https://t.me/goodrocket"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://goodrocket.ru/#website",
+            "url": "https://goodrocket.ru/",
+            "name": "Good Rocket",
+            "alternateName": "goodrocket.ru",
+            "inLanguage": "ru-RU",
+            "publisher": {
+              "@id": "https://goodrocket.ru/#organization"
+            }
+          }
+        ]
       }
     </script>
   </head>

@@ -801,6 +801,19 @@ dialog:focus {
   }
 }
 
+@media (max-width: 520px) {
+  .footer-identity {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-city {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
 /* Four-screen composition. */
 .hero {
   width: 100%;

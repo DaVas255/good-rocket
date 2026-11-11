@@ -12,7 +12,7 @@ export function Footer() {
           <BrandMark />
           <span>goodrocket</span>
         </a>
-        <span className="footer-city">Томск</span>
+        <span className="footer-city">Разработка сайтов · Томск</span>
       </div>
       <div className="footer-secondary">
         <span>Продумано. Разработано. Запущено.</span>
